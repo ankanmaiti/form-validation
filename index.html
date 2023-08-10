@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+
+
+    <form method="#" id="registration-from">
+        <div id="form-header">
+            <h2>Sign Up</h2>
+            <span id="error-message">&nbsp;</span>
+        </div>
+        
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" autocomplete="email" id="email" placeholder="Email Address">
+
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" autocomplete="new-password">
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"
+            autocomplete="new-password">
+
+
+        <label for="terms">
+            <input type="checkbox" name="terms" id="terms"> I agree to the Terms and Conditions
+        </label>
+
+        <button id="submit" type="submit">Register</button>
+    </form>
+</body>
+
+</html>
